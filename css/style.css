@@ -98,7 +98,7 @@ main {
 .album {
   cursor: pointer;
   margin: 2%;
-  background: white;
+  background: white url(http://localhost/Desktop/MyTunes/assets/img/concreat.png) repeat;
   padding: 5% 2%;
   border-radius: 10px;
   box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3);

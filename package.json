@@ -12,6 +12,7 @@
     "babel-eslint": "^4.0.10",
     "babel-loader": "^5.3.2",
     "css-loader": "^0.16.0",
+    "es6-promise": "^3.0.2",
     "eslint": "^1.6.0",
     "eslint-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^0.8.2",
@@ -19,7 +20,8 @@
     "postcss-loader": "^0.5.1",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.12.3",
-    "webpack": "^1.11.0"
+    "webpack": "^1.11.0",
+    "whatwg-fetch": "^0.10.1"
   },
   "keywords": [],
   "author": "Gert-Jan Wille <gert-jan.wille@student.howest.be>",

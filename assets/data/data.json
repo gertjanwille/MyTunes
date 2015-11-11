@@ -1,0 +1,28 @@
+{
+	"albums": [
+		{
+			"title": "Higher Place",
+			"cover": "HigherPlace"
+		},
+		{
+			"title": "Crime For Love",
+			"cover": "CrimeForLove"
+		},
+		{
+			"title": "Don't Let Go",
+			"cover": "DontLetGo"
+		},
+		{
+			"title": "1 Hour Best Euphoric Hardstyle",
+			"cover": "LongMix"
+		},
+		{
+			"title": "Say Love",
+			"cover": "SayLove"
+		},
+		{
+			"title": "We Are As One",
+			"cover": "WeAreAsOne"
+		}
+	]
+}
