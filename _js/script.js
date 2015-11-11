@@ -3,6 +3,7 @@ import'es6-promise';
 
 import $album from './modules/Export';
 import cover from './modules/Functies';
+import time from './modules/Time';
 
 let albums, current, playing, $audio;
 
@@ -24,17 +25,11 @@ const init = data =>{
 	$album.buildPlaylist(albums);
 };
 
-const loadData = ()=>{
-	fetch('./assets/data/data.json')
-		.then(r =>r.json())
-		.then(({albums})=>init(albums));
-};
-
 const playSong = cover =>{
 	current = albums.find(function(item){
     	return item.cover === cover;
   	});
-	$audio = document.querySelector('audio');
+	
 	$audio.setAttribute('src', `assets/snd/${cover}.mp3`);
 	if($audio.play){
 		playing.parentNode.parentNode.classList.add('isPlaying');
@@ -51,6 +46,18 @@ const pauseSong = () =>{
 	playing.parentNode.parentNode.classList.remove('isPlaying');
 	playing.classList.remove('pause', 'pauseIt');
 	playing.classList.add('play');
+};
+
+const loadData = ()=>{
+	$audio = document.querySelector('audio');
+	$audio.addEventListener('timeupdate',e=>{
+		let $target = e.currentTarget;
+		time.timeUpdate(playing.parentNode, $target.currentTime, $target.duration);
+	} );
+
+	fetch('./assets/data/data.json')
+		.then(r =>r.json())
+		.then(({albums})=>init(albums));
 };
 
 loadData();

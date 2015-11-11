@@ -6,7 +6,7 @@ const buildPlaylist = albums =>{
 			<article class="album">
 				<figure>
 					<div class="cover-container">
-						<img class='cover effect' src="assets/img/covers/${item.cover}.jpg" width="250" height="250">
+						<img class='cover ' src="assets/img/covers/${item.cover}.jpg" width="250" height="250">
 						<section class='player hide'>
 							<a class="icon play" href="${item.cover}"></a>
 							<div class="time"></div>
