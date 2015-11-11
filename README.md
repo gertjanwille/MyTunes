@@ -1,6 +1,6 @@
 #MyTunes
 ##What is it?
-MyTunes is an little website where you can find some tracks that are my favoriet. 
+MyTunes is an little website where you can find some of my favorite tracks 
 But the most important, it's a prep for my exam Rich Media Development.
 
 ###Getting Started
