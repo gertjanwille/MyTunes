@@ -27,6 +27,7 @@ main{
   filter: brightness(120%) grayscale(100%);
   opacity: 0.5;
 }
+
 .album{
 	cursor: pointer;
 	margin: 2%;
@@ -118,4 +119,11 @@ figure {
 	transition: all 0.4s ease;
 }
 
+.isPlaying img{
+	filter: brightness(100%) grayscale(0%);
+  	opacity: 1;
+}
+.isPlaying .player{
+  		bottom: 0px;
+  	}
 

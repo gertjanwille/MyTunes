@@ -37,6 +37,7 @@ const playSong = cover =>{
 	$audio = document.querySelector('audio');
 	$audio.setAttribute('src', `assets/snd/${cover}.mp3`);
 	if($audio.play){
+		playing.parentNode.parentNode.classList.add('isPlaying');
 		playing.classList.remove('play');
 		playing.classList.add('pause');
 		if(playing.classList.contains('pause')){
@@ -47,6 +48,7 @@ const playSong = cover =>{
 
 const pauseSong = () =>{
 	$audio.pause()
+	playing.parentNode.parentNode.classList.remove('isPlaying');
 	playing.classList.remove('pause', 'pauseIt');
 	playing.classList.add('play');
 };

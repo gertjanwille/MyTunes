@@ -211,3 +211,13 @@ figure {
 .cover {
   transition: all 0.4s ease;
 }
+
+.isPlaying img {
+  -webkit-filter: brightness(100%) grayscale(0%);
+  filter: brightness(100%) grayscale(0%);
+  opacity: 1;
+}
+
+.isPlaying .player {
+  bottom: 0px;
+}
