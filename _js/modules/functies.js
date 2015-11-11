@@ -17,6 +17,16 @@ const html = (strings, ...values) => {
 
 };
 
+const effect = ($cover) => {
+  $cover.classList.add('effect');
+};
+
+const noEffect = ($cover) => {
+  $cover.classList.remove('effect');
+};
+
 export default{
-  html
+  html,
+  effect,
+  noEffect
 }

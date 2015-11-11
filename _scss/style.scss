@@ -23,6 +23,10 @@ main{
   	margin-top: 50px;
 }
 
+.effect {
+  filter: brightness(120%) grayscale(100%);
+  opacity: 0.5;
+}
 .album{
 	cursor: pointer;
 	margin: 2%;
@@ -30,6 +34,15 @@ main{
 	padding: 5% 2%;
 	border-radius: 10px;
 	box-shadow: -10px 10px 15px rgba(0,0,0,0.3);
+	transition: all 0.4s ease;
+	&:hover .player{
+		bottom: 0px;
+	}
+
+	&:hover .effect{
+		filter: brightness(100%) grayscale(0%);
+  		opacity: 1;
+	}
 }
 figure {
   	display: flex;
@@ -70,11 +83,9 @@ figure {
   	transition: 0.3s all;
   	height: 50px;
   	width: 100%;
+  	transition: all 0.4s ease;
 }
 
-.show{
-	bottom: 0px;
-}
 
 .hide {
 	bottom: -50px;
@@ -106,8 +117,5 @@ figure {
 .cover{
 	transition: all 0.4s ease;
 }
-.effect {
-  filter: brightness(120%) blur(0px) grayscale(100%);
-  opacity: 0.5;
-}
+
 

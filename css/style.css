@@ -95,6 +95,12 @@ main {
   margin-top: 50px;
 }
 
+.effect {
+  -webkit-filter: brightness(120%) grayscale(100%);
+  filter: brightness(120%) grayscale(100%);
+  opacity: 0.5;
+}
+
 .album {
   cursor: pointer;
   margin: 2%;
@@ -102,6 +108,17 @@ main {
   padding: 5% 2%;
   border-radius: 10px;
   box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.album:hover .player {
+  bottom: 0px;
+}
+
+.album:hover .effect {
+  -webkit-filter: brightness(100%) grayscale(0%);
+  filter: brightness(100%) grayscale(0%);
+  opacity: 1;
 }
 
 figure {
@@ -159,10 +176,7 @@ figure {
   transition: 0.3s all;
   height: 50px;
   width: 100%;
-}
-
-.show {
-  bottom: 0px;
+  transition: all 0.4s ease;
 }
 
 .hide  {
@@ -196,10 +210,4 @@ figure {
 
 .cover {
   transition: all 0.4s ease;
-}
-
-.effect {
-  -webkit-filter: brightness(120%) blur(0px) grayscale(100%);
-  filter: brightness(120%) blur(0px) grayscale(100%);
-  opacity: 0.5;
 }

@@ -1,4 +1,5 @@
 import Functies from './Functies';
+
 const buildPlaylist = albums =>{
 	albums.forEach((item,i)=>{
 		let el = Functies.html(`

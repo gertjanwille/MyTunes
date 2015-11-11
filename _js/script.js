@@ -1,15 +1,16 @@
 import 'whatwg-fetch';
 import'es6-promise';
 
-import htmlExport from './modules/Export';
+import $album from './modules/Export';
+import cover from './modules/Functies';
 
 let albums;
 
 const init = data =>{
 	albums = data;
-
 	
-	htmlExport.buildPlaylist(albums);
+	
+	$album.buildPlaylist(albums);
 };
 
 const loadData = ()=>{
@@ -18,4 +19,7 @@ const loadData = ()=>{
 		.then(({albums})=>init(albums));
 };
 
+const mouseOver = e =>{
+	console.log('hello world');
+}
 loadData();
